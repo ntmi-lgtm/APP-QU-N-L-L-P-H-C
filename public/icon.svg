@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff758c"/>
+      <stop offset="100%" stop-color="#ff7eb3"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded App Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+
+  <!-- Inner Soft Glowing Circle -->
+  <circle cx="256" cy="256" r="210" fill="#ffffff" fill-opacity="0.15"/>
+
+  <!-- Open Book Base -->
+  <g filter="url(#shadow)">
+    <!-- Book pages -->
+    <path d="M 120 370 Q 188 350 256 365 Q 324 350 392 370 L 392 280 Q 324 260 256 275 Q 188 260 120 280 Z" fill="#ffffff"/>
+    <path d="M 120 380 Q 188 360 256 375 Q 324 360 392 380 L 392 370 Q 324 350 256 365 Q 188 350 120 370 Z" fill="#e2e8f0"/>
+    <line x1="256" y1="275" x2="256" y2="375" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Sprout / Stem -->
+    <path d="M 256 280 C 256 230 256 190 256 160" stroke="#10b981" stroke-width="12" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 256 220 C 230 200 200 210 200 230 C 200 250 235 245 256 235 Z" fill="#34d399"/>
+    <path d="M 256 200 C 282 180 312 190 312 210 C 312 230 277 225 256 215 Z" fill="#34d399"/>
+    
+    <!-- Tulip Blossom / Heart Flower -->
+    <g transform="translate(256, 140)">
+      <!-- Left Petal -->
+      <path d="M 0 10 C -45 5 -60 -40 -35 -70 C -15 -90 -5 -70 0 -50 Z" fill="#f43f5e"/>
+      <!-- Right Petal -->
+      <path d="M 0 10 C 45 5 60 -40 35 -70 C 15 -90 5 -70 0 -50 Z" fill="#f43f5e"/>
+      <!-- Center Heart Petal -->
+      <path d="M 0 15 C -35 -15 -45 -65 0 -95 C 45 -65 35 -15 0 15 Z" fill="#fb7185"/>
+      <circle cx="0" cy="-45" r="12" fill="#fef08a"/>
+    </g>
+
+    <!-- Golden Stars of Encouragement -->
+    <polygon points="150,150 156,168 175,168 160,180 165,198 150,186 135,198 140,180 125,168 144,168" fill="#facc15" filter="url(#shadow)"/>
+    <polygon points="360,140 365,155 381,155 368,165 373,180 360,170 347,180 352,165 339,155 355,155" fill="#facc15" filter="url(#shadow)"/>
+    <polygon points="256,70 260,82 273,82 263,90 267,102 256,94 245,102 249,90 239,82 252,82" fill="#fef08a"/>
+  </g>
+
+  <!-- Happy Heart Symbol -->
+  <path d="M 256 440 C 230 410 190 380 220 350 C 240 330 256 345 256 345 C 256 345 272 330 292 350 C 322 380 282 410 256 440 Z" fill="url(#heartGrad)"/>
+</svg>

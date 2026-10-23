@@ -1,0 +1,10 @@
+{
+  "name": "Remix Lớp Học Cô Mị – Bình Dị Yêu Thương",
+  "description": "Ứng dụng quản lý lớp học tiểu học thông minh, trực quan, giàu yêu thương của Trường Tiểu học Trần Văn Ơn",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
