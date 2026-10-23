@@ -6,6 +6,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
   return {
+    Base: '/app quan ki/',
     plugins: [
       react(),
       tailwindcss(),
